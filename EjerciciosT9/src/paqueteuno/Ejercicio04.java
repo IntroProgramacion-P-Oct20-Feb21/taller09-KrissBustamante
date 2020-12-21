@@ -22,6 +22,29 @@ public class Ejercicio04 {
             "Juan Vasquez"};
         String[] promediosCualitativos = new String[7];
         
-    }
+        /* 
+           Se utiliza un ciclo para recorrer el arreglo promedio y se añade 
+           condiciones para darle un valor al arreglo promediosCualitativos 
+         */
+        for (int indice = 0; indice < promedios.length; indice++) {
+            if ((promedios[indice] >= 0) && (promedios[indice] <= 5.9)) {
+                promediosCualitativos[indice] = "Regular";
+            } else {
+                if ((promedios[indice] >= 6) && (promedios[indice] <= 8.9)) {
+                    promediosCualitativos[indice] = "Bueno";
+                } else {
+                    if ((promedios[indice] >= 9) && (promedios[indice] <= 10)) {
+                        promediosCualitativos[indice] = "Sobresaliente";
+                    }
+                }
+            }
 
+        }
+        for (int i = 0; i < promediosCualitativos.length; i++) {
+            System.out.printf("%spromedio: %.2f promedio cualitativo %s\n",
+                    estudiantes[i], promedios[i], promediosCualitativos[i]);
+
+        }
+    }
 }
+

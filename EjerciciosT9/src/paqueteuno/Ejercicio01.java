@@ -23,12 +23,17 @@ public class Ejercicio01 {
         
         for (int i = 0; i < respuestas.length; i++) {
             respuesta = respuestas[i];
+            
             if ((respuesta >= 1) && (respuesta <=5)){
                 valoresRangos[0] = valoresRangos[0] + 1;
+                
             }else{
+                
                 if ((respuesta >= 6) && (respuesta <=10)){
                     valoresRangos[1] = valoresRangos[1] + 1;
+                
                 }else{
+                
                     if ((respuesta >= 11) && (respuesta <=15)){
                         valoresRangos[2] = valoresRangos[2] + 1;
                     }else{

@@ -22,14 +22,32 @@ public class Ejercicio05 {
             "Teresa", "Luis", "Mark", "Jennifer",
             "Alcides"};
         String inicial;
+        String inicialnombre;
         boolean bandera = true;
         while(bandera){
             System.out.println("Ingrese una letra");
             inicial = entrada.nextLine();
+            inicial = inicial.toUpperCase();
+            /* Se almacena en la variable inicialArreglo las primeras 
+                letras del arreglo estudiantes
+                 */
+            for (int indice = 0; indice < estudiantes.length; indice++) {
+           
+             
+                inicialnombre = estudiantes[indice].substring(0, 1);
+                /* 
+                Comparamos con una condicion if si la inicial que ingreso 
+                el usuario es la misma que la iniciales de arreglo de estudiantes
+                y de lo contrario la bandera sera igual a false
+                 */
+                if (inicial.equals(inicialnombre)) {
+                    bandera = false;
                     
         }
         
         
     }
 
+}
+   }
 }
